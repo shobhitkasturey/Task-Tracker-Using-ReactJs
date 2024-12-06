@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Task Tracker Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **Task Tracker** application is a React-based project designed to help users manage their daily tasks efficiently. Users can add, edit, mark tasks as complete/incomplete, and delete tasks. The application leverages React's `useState` hook for state management and incorporates a clean and modular component-based architecture.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+1. **Add Tasks**: Users can create new tasks.
+2. **Edit Tasks**: Update existing tasks with the Edit feature.
+3. **Mark as Complete/Incomplete**: Toggle the task status to mark as complete or incomplete.
+4. **Delete Tasks**: Remove tasks from the list permanently.
+5. **Interactive UI**: Responsive and dynamic user interface with React components.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
+```
+├── src
+│   ├── components
+│   │   ├── TodoWrapper.js     # Main wrapper component for managing tasks
+│   │   ├── TodoForm.js        # Component to add new tasks
+│   │   ├── Todo.js            # Component to display a single task
+│   │   ├── EditTodoForm.js    # Component to edit an existing task
+│   ├── App.js                 # Entry point for the application
+│   ├── index.js               # React DOM rendering
+│   ├── styles.css             # CSS styling for the application
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. **TodoWrapper.js**
+- Manages the state of tasks.
+- Contains logic for:
+  - Adding new tasks.
+  - Editing tasks.
+  - Deleting tasks.
+  - Marking tasks as complete/incomplete.
 
-### `npm run build`
+### 2. **TodoForm.js**
+- Form component to create new tasks.
+- Captures user input and sends the task to `TodoWrapper` for addition.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. **Todo.js**
+- Displays individual tasks.
+- Includes:
+  - Mark as complete/incomplete.
+  - Edit and Delete options.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. **EditTodoForm.js**
+- Form component for updating an existing task.
+- Pre-fills the current task value and updates upon submission.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Installation and Setup
+### Prerequisites
+- [Node.js](https://nodejs.org/) installed.
+- Basic understanding of React.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/task-tracker.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd task-tracker
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
+1. **Add a Task**:
+   - Enter the task in the input field and click **"Add Task"**.
+2. **Mark as Complete/Incomplete**:
+   - Click on the task text to toggle between complete and incomplete status.
+3. **Edit a Task**:
+   - Click the edit icon (pen) next to a task.
+   - Update the task in the input field and click **"Update Task"**.
+4. **Delete a Task**:
+   - Click the trash icon to remove the task permanently.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Dependencies
+- [React](https://reactjs.org/)
+- [Font Awesome Icons](https://fontawesome.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future Enhancements
+- Add persistent storage using localStorage or a backend database.
+- Include task prioritization and categorization.
+- Implement drag-and-drop reordering for tasks.
+- Add a search and filter feature.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy using the **Task Tracker** app! 😊
