@@ -88,7 +88,7 @@ The **Task Tracker** application is a React-based project designed to help users
 1. **Add a Task**:
    - Enter the task in the input field and click **"Add Task"**.
 2. **Mark as Complete/Incomplete**:
-   - Click on the task text to toggle between complete and incomplete status.
+   - Click on the task text to toggle between complete and incomplete status (A line cuts the task test if marked completed).
 3. **Edit a Task**:
    - Click the edit icon (pen) next to a task.
    - Update the task in the input field and click **"Update Task"**.
